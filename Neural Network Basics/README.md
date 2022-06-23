@@ -12,19 +12,19 @@ $Y \in R^{1 \times m}$ is the label matrix.
 
 ## Logistic Regression
 
-Given $`x`$, we want to find $`\hat{y}`$ where $` \hat{y} = P(y=1|x)`$.
+Given $x$, we want to find $\hat{y}$ where $\hat{y} = P(y=1|x)$.
 
-Parameters: $`w \in \R^{n_x},\ b \in \R`$
+Parameters: $w \in \R^{n_x},\ b \in \R$
 
-Output $`\hat{y} = \sigma (w^T + b)`$. We can also write $`z = w^T x + b`$ where z is the sigmoid function. The sigmoid function is represented as $`\sigma(z) = \frac{1}{1+e^{-x}}`$. 
+Output $\hat{y} = \sigma (w^T + b)$. We can also write $z = w^T x + b$ where z is the sigmoid function. The sigmoid function is represented as $\sigma(z) = \frac{1}{1+e^{-x}}$. 
 
-If z is large, then $`\sigma(z) \approx 1`$.
+If z is large, then $\sigma(z) \approx 1$.
 
-If z is large negative number, then $`\sigma(z) \approx 0`$.
+If z is large negative number, then $\sigma(z) \approx 0$.
 
 ## Logistic Regression Cost Function 
 
-We have $`\hat{y} = \sigma(w^Tx+b)`$, where $`\sigma (z) = \frac{1}{1+1+e^{-z}}`$.
+We have $\hat{y} = \sigma(w^Tx+b)$, where $\sigma (z) = \frac{1}{1+1+e^{-z}}$.
 
 Suppose we are given the training set: $`\{(x^{(1)}, y^{(1)}), \dots, (x^{(m)}, y^{(m)}) \}`$ and we want $`\hat{y}^{(i)} = y^{(i)} `$. We will use the cost function to analysis this approximation. The cost function of Logsitic Regression is given by:
 $` L(\hat{y}, y)  = -(y \text{log} \hat{y})  + (1-y) \text{log}(1-\hat{y}) `$
