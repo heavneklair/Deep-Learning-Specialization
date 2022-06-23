@@ -4,11 +4,11 @@ Logistic Regreesion is an algorithm for binary classification
 ## Standard Notations for Logistics Regression
 A single training example is represented by a pair, like $(x,y)$ where $x \in \R^{n_x}$ (x is an $\R^{n_x}$ dimensional feature vector) and $n_x$ is the input size. $y \in (0,1)$ is the predicted output vector. 
 
-$`m`$ denotes the examples in the dataset: $`(x^{(1)}, y^{(1)}), x^{(2)},y^{(2)}, \dots , x^{(m)},y^{(m)}`$ are the training examples.
+$m$ denotes the examples in the dataset: $(x^{(1)}, y^{(1)}), x^{(2)},y^{(2)}, \dots , x^{(m)},y^{(m)}$ are the training examples.
 
-$`X \in \R^{n_x \times m}`$ is the input matrix. Here $`n_x`$ is the number of columns and $`m`$ is the number of rows.
+$X \in \R^{n_x \times m}$ is the input matrix. Here $`n_x`$ is the number of columns and $m$ is the number of rows.
 
-$`Y \in R^{1 \times m}`$ is the label matrix.
+$Y \in R^{1 \times m}$ is the label matrix.
 
 ## Logistic Regression
 
