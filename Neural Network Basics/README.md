@@ -35,9 +35,9 @@ If $`y=0:\ L(\hat{y}, y)  = (1-y) \text{log}(1-\hat{y}) `$
 
 Toghther, it becomes: 
 
-```math
+$$
 J(w,b) = \frac{1}{m} \sum_{i=1}^{m} L(\hat{y}^{(i)}, y^{(i)} ) = -\frac{1}{m} \sum_{i=1}^{m} \big[ y^{(i)} \text{log} \hat{y}^{(i)} + (1-y^{(i)}) \text{log}(1 - \hat{y}^{(i)}  ) \big]
-```
+$$
 
 ## Gradient Descent
 
@@ -58,7 +58,7 @@ $`\frac{\partial}{\partial w_1}\ J(w, b) = \frac{1}{m} \sum_{1}^{m} \sum_{i=1}^{
 
 Initialize $`J = 0,\ dw_1 = 0,\ dw_2 = 0,\ db = 0`$.
 
-```math
+$$
 \begin{equation}
 \begin{split}
 \text{For } i = 1 \text{ to } & m\\
@@ -74,7 +74,7 @@ J = J/m& \\
 dw_1 = dw_1&/m ;\ dw_2 = dw_2/m;\ \dots dw_n = dw_n/m ; db = db/m
 \end{split}
 \end{equation}
-```
+$$
 
 Writing a for loop in Python is not considered a good pracitce if we are performing a mathematical calculation which involves a heavy computation. So in our case, instead of writing,
 
