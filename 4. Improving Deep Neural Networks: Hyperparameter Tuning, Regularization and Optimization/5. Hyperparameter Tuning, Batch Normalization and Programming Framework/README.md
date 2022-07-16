@@ -31,9 +31,10 @@ The case to find the best value for beta which ranges from 0.9 to 0.999 is simil
 The one reason we are using log scale instead of linear, while trying to find beta, is that when beta is close to 1, the sensetivity of the results we get changes with every small changes to beta. With log scale, it doesnt happen !! 
 
 ## Batch Normalization in "Batch Normalization.ipynb"
+Use the "Batch Normalization.ipynb" file to read more about it.
 
 ## Softmax Regression (Multi-Class Logistic Regression)
+Use the "Softmax Regression (Multi-Class Logistic Regression).ipynb" file to read more about it.
 
 ## TensorFlow
-
-The "TensorFlow Introduction.ipynb" is my first introduction to TensorFlow. In this, we are going to step through the basic structure of a TensorFlow program.
+Use the "TensorFlow Introduction.ipynb" file to read more about it.
