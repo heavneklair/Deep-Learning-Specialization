@@ -95,7 +95,7 @@ Other than convolutional layer, ConvNets often use pooling layers to reduce the 
 
 **Max Pooling**
 
-![Max Pooling](images/max_pooling.jpeg)
+![Max Pooling](images/max_pooling.png)
 
 We split the input image into four part, four squares and the output will be the max from the corresponding reshaded region. So
 
