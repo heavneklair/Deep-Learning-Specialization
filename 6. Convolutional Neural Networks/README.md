@@ -119,3 +119,11 @@ $$n_H \times n_W \times n_c$$
 
 $$ \lfloor \frac{n_H - f}{s} + 1  \rfloor  \times \lfloor \frac{n_W - f}{s} + 1  \rfloor \times n_c $$
 
+## Convolutional Neural Network
+
+* Input image: 32 x 32 x 3 size
+
+We are going to build here is a similar ConvNet of "LeNet-5".
+
+* First layer uses a 5 x 5 filter and a stride of 1 and no padding. We apply 6 filters of it.
+* Output layer: 28 x 28 x 6 image. We will call this layer Conv-1.
