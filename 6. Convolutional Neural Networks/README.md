@@ -76,8 +76,23 @@ $$ A^{[l]} \rightarrow m \times n^{[l]}_H \times n^{[l]}_W \times n^{[l]}_c $$
 
 * Weights: 
 
-$$ \underbrace{f^{[l]} \times f^{[l]} \times n^{[l-1]}_c }_{\text{dimension of one filter}} \times \underbrace{n^{[l]}_c }_{\text{number of filters}} $$
+$$ f^{[l]} \times f^{[l]} \times n^{[l-1]}_c \times n^{[l]}_c$$
 
+It is dimension of one filter times the number of filters.
 * Bias: 
 
 $$ n^{[l]}_c $$
+
+## Types of Layers Convolutional Network
+
+* Convolutional Layer (CONV)
+* Pooling layer (POOL)
+* Fully connected layer (FC)
+
+## Pooling Layer
+
+Other than convolutional layer, ConvNets often use pooling layers to reduce the size of the representation, to speed up computation, as well as make some of the features detect a bit more robust features.
+
+**Max Pooling**
+
+$$ \begin{pmatrix} d \\  \end{pmatrix} $$
