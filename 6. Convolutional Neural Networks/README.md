@@ -95,8 +95,27 @@ Other than convolutional layer, ConvNets often use pooling layers to reduce the 
 
 **Max Pooling**
 
-![Max Pooling](images/max_pooling.png)
+![Max Pooling](images/max_pooling.jpeg)
 
 We split the input image into four part, four squares and the output will be the max from the corresponding reshaded region. So
 
-This is as if we are applying the filter size of 2 because we are taking the 2 x 2 regions and sride of 2. These become the hyperparameters of Max Pooling.
+This is as if we are applying the filter size of 2 because we are taking the 2 x 2 regions and stride of 2. These become the hyperparameters of Max Pooling. One advantage of using Max pooling is that it doesnt use any parameters, instead only use hyperparameters.
+
+We can also use **Average Pooling** where we will take the average of the numbers instead of taking max of numbers. **Max Pooling** is more common than **average pooling**.
+
+To summarize the hyerparameters: 
+
+* f : filter size
+* s : stride 
+* Max or Average Pooling
+
+The most common choice of hyperparameters are f = 2, s = 2. This has the effect of roughly shrinking the height and width by a factor of two.
+
+* Input: volume of size:
+
+$$n_H \times n_W \times n_c$$
+
+* Output: Volume of size 
+
+$$ \lfloor \frac{n_H - f}{s} + 1  \rfloor  \times \lfloor \frac{n_W - f}{s} + 1  \rfloor \times n_c $$
+
