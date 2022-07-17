@@ -76,7 +76,7 @@ $$ A^{[l]} \rightarrow m \times n^{[l]}_H \times n^{[l]}_W \times n^{[l]}_c $$
 
 * Weights: 
 
-$$ \underbrace{f^{[l]} \times f^{[l]} \times n^{[l-1]}_c}_{\text{dimension of one filter}} \times \underbrace{n^{[l]}_c}_{\text{number of filters}} $$
+$$ \underbrace{f^{[l]} \times f^{[l]} \times n^{[l-1]}_c }_{\text{dimension of one filter}} \times \underbrace{n^{[l]}_c }_{\text{number of filters}} $$
 
 * Bias: 
 
