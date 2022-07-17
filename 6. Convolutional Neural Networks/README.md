@@ -42,8 +42,8 @@ Summary of notation:
 
 $f^{[l]}$ = filter size
 
-$p^{[l]} = $ padding
+$p^{[l]} =$ padding
 
-$s^{[l]} = $ stride
+$s^{[l]} =$ stride
 
 * Input: 
