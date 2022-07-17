@@ -40,9 +40,7 @@ Summary of notation:
 
 * If layer $l$ is a convolution layer:
 
-$f^{[l]}$ = filter size
-
-$p^{[l]} =$ padding
+$f^{[l]} = \text{filter size}, \qquad p^{[l]} = \text{padding}$
 
 $s^{[l]} =$ stride
 
