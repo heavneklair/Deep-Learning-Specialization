@@ -54,6 +54,30 @@ $$ n^{[l]}_H \times n^{[l]}_W \times n^{[l]}_c  $$
 
 * The output volume of this layer is given by
 
-$$ n^{[l]} - \lfloor \frac{n^{[l-1]} + 2p^{[l]} -f^{[l]} }{s^{[l]} } + 1 \rfloor$$
+$$ n^{[l]} = \lfloor \frac{n^{[l-1]} + 2p^{[l]} -f^{[l]} }{s^{[l]} } + 1 \rfloor$$
 
 for height and width respectively.
+
+If the output volume has the depth $n^{[l]}_c$, then we konw from the previous examples that thats equal to number of filters in that layer.
+
+$$ n^{[l]}_c  = \text{number of filters} $$
+
+* Each filter is: 
+
+$$ f^{[l]} \times f^{[l]} \times n^{[l-1]}_c $$
+
+* Activations: 
+
+$$ a^{[l]} \rightarrow (n^{[l]}_H \times n^{[l]}_W \times n^{[l]}_c  ) $$
+
+If we are implementing the activations in a vectorized form, then
+
+$$ A^{[l]} \rightarrow m \times n^{[l]}_H \times n^{[l]}_W \times n^{[l]}_c $$
+
+* Weights: 
+
+$$ \underbrace{f^{[l]} \times f^{[l]} \times n^{[l-1]}_c}_{\text{dimension of one filter}} \times \underbrace{n^{[l]}_c}_{\text{number of filters}} $$
+
+* Bias: 
+
+$$ n^{[l]}_c $$
