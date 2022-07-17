@@ -30,4 +30,13 @@ $$z^{[1]} = W^{[1]} a^{[0]} + b^{[1]} $$
 
 $$ a^{[1]} = g(z^{[1]}) $$
 
-The input image is the $a^{[0]}$, also denoted as $X$. The filter layers become $W^{[1]} $
+The input image is the $a^{[0]}$, also denoted as $X$. The filter layers become $W^{[1]}$. The operations same the same, but the input becomes a different dimensional images.
+
+If we have 10 filters that are $3 \times 3 \times 3$ in one layer of a neural network, how many parameters does that layer have?
+
+So one filter has 27 + 1 = 28 parameters, and we have 10 such layers, thus we have $28 \times 10$ parameters. We can use these filters to detect features, vertical edges, horizontal edges and other features in the images. We can detect many features, even in a very very large image by using less number of parameters. This make the CNN makes less prone to overfitting.
+
+Summary of notation: 
+
+If layer $l$ is a convolution layer:
+- $f^{[l]} = $ filter layer
