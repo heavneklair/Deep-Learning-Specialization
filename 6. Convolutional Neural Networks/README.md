@@ -95,4 +95,10 @@ Other than convolutional layer, ConvNets often use pooling layers to reduce the 
 
 **Max Pooling**
 
-$$ \begin{pmatrix} d \\  \end{pmatrix} $$
+$$ \begin{pmatrix} 1 & 3 & 2 & 1 \\ 2 & 9 & 1 & 1 \\ 1 & 3 & 2 & 3 \\ 5 & 6 & 1 & 2 \end{pmatrix} \rightarrow \begin{pmatrix} a & b \\ c & d \end{pmatrix} $$
+
+We split the input image into four part, four squares and the output will be the max from the corresponding reshaded region. So
+
+$$ \begin{pmatrix} a & b \\ c & d \end{pmatrix}  = \begin{pmatrix} 9 & 2 \\ 6 & 3 \end{pmatrix}  $$
+
+This is as if we are applying the filter size of 2 because we are taking the 2 x 2 regions and sride of 2. These become the hyperparameters of Max Pooling.
