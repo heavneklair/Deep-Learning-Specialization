@@ -26,8 +26,7 @@ If we want to detect multiple edges, we will use multiple filters. The second ou
 ## One Layer of a Convolutional Network
 
 One layer of forward propagation of standard Neural Network is as follows: 
-![image1](images/equation_1.png)
-
 $$ z^{[1]} = W^{[1]} a^{[0]} + b^{[1]} $$
+$$ a^{[1]} = g(z^{[1]}) $$
 
-The input image is the $a^{[0]}$
+The input image is the $a^{[0]}$, also denoted as $X$. The filter layers become $W^{[1]} $
