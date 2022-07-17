@@ -39,4 +39,5 @@ So one filter has 27 + 1 = 28 parameters, and we have 10 such layers, thus we ha
 Summary of notation: 
 
 If layer $l$ is a convolution layer:
+
 - $f^{[l]} = $ filter layer
