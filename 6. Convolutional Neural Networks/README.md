@@ -44,6 +44,16 @@ $$f^{[l]} = \text{filter size}, \qquad p^{[l]} = \text{padding}, \qquad s^{[l]} 
 
 * Input: 
 
-$$ n \times n \times n_c $$
+$$ n^{[l-1]}_H \times n^{[l-1]}_W \times n^{[l-1]}_c $$
 
-where $n_c$ is the number of channels
+where $n_c$ is the number of channels in the previous layer, and H W are height and width.
+
+* Output: 
+
+$$ n^{[l]}_H \times n^{[l]}_W \times n^{[l]}_c  $$
+
+* The output volume of this layer is given by
+
+$$ n^{[l]} - \lfloor \frac{n^{[l-1]} + 2p^{[l]} -f^{[l]} }{s^{[l]} } + 1 \rfloor$$
+
+for height and width respectively.
