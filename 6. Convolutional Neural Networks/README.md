@@ -43,4 +43,7 @@ Summary of notation:
 $$f^{[l]} = \text{filter size}, \qquad p^{[l]} = \text{padding}, \qquad s^{[l]} = \text{stride}$$
 
 * Input: 
-$$ 
+
+$$ n \times n \times n_c $$
+
+where $n_c$ is the number of channels
