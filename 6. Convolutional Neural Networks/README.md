@@ -40,4 +40,4 @@ Summary of notation:
 
 If layer $l$ is a convolution layer:
 
-1. $f^{[l]} = $ filter layer
+    $f^{[l]}$ = filter layer
