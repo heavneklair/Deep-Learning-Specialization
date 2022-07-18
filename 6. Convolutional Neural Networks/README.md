@@ -121,9 +121,16 @@ $$ \lfloor \frac{n_H - f}{s} + 1  \rfloor  \times \lfloor \frac{n_W - f}{s} + 1 
 
 ## Convolutional Neural Network
 
-* Input image: 32 x 32 x 3 size
+Here is an example of Neural Network, espifically LeNet-5.
 
-We are going to build here is a similar ConvNet of "LeNet-5".
+![Max Pooling](images/NN_Example_LeNet-5.jpeg)
 
-* First layer uses a 5 x 5 filter and a stride of 1 and no padding. We apply 6 filters of it.
-* Output layer: 28 x 28 x 6 image. We will call this layer Conv-1.
+As we go deeper in the network, we can see that height ($n_H$) and width ($n_W$) decreases and the depth ($n_C$) is increase. We will notice that a lot these properties.
+
+## Why Convoltions? 
+
+Two main advantages of convolutional layers over just using fully connected layers are: 
+
+1. Parameter Sharing: A feature detector (such as a vertical edge detector) that's useful in one part of the image is probably useful in another part of the image.
+
+2. Sparsity of Connections: In each layer, each output value depends only on a small number of inputs.
